@@ -1,0 +1,46 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #1e1e1e;
+      color: black;
+}
+
+.marquee-container {
+      width: 100%;
+      overflow: hidden;
+      background: linear-gradient(90deg, #00C9FF, #92FE9D);
+      padding: 15px 0;
+}
+
+.marquee {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      animation: scroll 15s linear infinite;
+}
+
+.marquee span {
+      white-space: nowrap;
+      padding: 0 50px;
+      font-size: 1.5em;
+      font-weight: bold;
+}
+
+@keyframes scroll {
+      0% {
+            transform: translateX(100%);
+      }
+
+      100% {
+            transform: translateX(-100%);
+      }
+}
